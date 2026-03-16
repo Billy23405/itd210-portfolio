@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Big Billy — Fashion Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ── PAGE LOADER ── -->
+  <div id="loader">
+      <!-- Loader name: each letter animates in with a staggered delay -->
+    <div class="loader-name">
+      <span style="animation-delay:0.0s">B</span><span style="animation-delay:0.05s">I</span><span style="animation-delay:0.1s">G</span>
+      <span style="animation-delay:0.28s">B</span><span style="animation-delay:0.33s">I</span><span style="animation-delay:0.38s">L</span><span style="animation-delay:0.43s">L</span>Y</span>
+    </div>
+      <!-- Loader bar: simple progress indicator that fills while page loads -->
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  </div>
+
+  <!-- ── CUSTOM CURSOR ── -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-circle"></div>
+  <div id="cursor-label"></div>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <nav id="navbar">
+    <a class="logo" href="#top">Big<span class="logo-accent">.</span>Billy</a>
+
+    <ul>
+      <li><a href="#bio">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <a class="nav-btn" href="#contact">Book a Consult</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="hero" id="top">
+
+    <div class="hero-image-col">
+      <img
+        src="images/keenan-beasley-FJ4r1tqnW7s-unsplash.jpg"
+        alt="Billy — Fashion Designer"
+      />
+       <!-- Timeline / signature line under the image -->
+      <span class="hero-num">Ghana · Milan · New York · 2009–2026</span>
+    </div>
+  <!-- Right column: hero content (overline + headline) -->
+    <div class="hero-content">
+      <p class="hero-overline">
+        <span class="deco-line short"></span>
+        Exclusive Fashion Designer
+      </p>
+      
+      <!-- Hero title: main brand name and creative tagline -->
+        <h1 class="hero-title">
+        <span class="line"><span>Big</span>Billy</span>
+        <span class="line"><span>Ansah</span></span>
+        <span class="line italic"><span>Creative Space</span></span>
+      </h1>
+
+      <p class="hero-sub">
+        <span class="deco-line"></span>
+        Est. 2009 &nbsp;·&nbsp; Ghana VII
+      </p>
+
+      <p class="hero-body">
+        Garments crafted where architectural precision meets poetic softness. 
+        Each creation becomes a dialogue between structure and surrender designed to be worn, remembered, and felt.
+      </p>
+
+      <a class="hero-cta" href="#bio" data-cursor="Explore">
+        <span class="hero-cta-circle">↓</span>
+        Discover His World
+      </a>
+    </div>
+
+    <!-- Marquee ticker -->
+    <div class="hero-ticker">
+      <div class="ticker-track">
+        <span class="ticker-item">Prada Fashion Week</span>
+        <span class="ticker-item">Vogue Editorial</span>
+        <span class="ticker-item">Met Gala 2024</span>
+        <span class="ticker-item">Palais Galliera</span>
+        <span class="ticker-item">Glitz Africa Fashion Week</span>
+        <span class="ticker-item">Lyon Heritage Weaves</span>
+        <span class="ticker-item">Kyoto Artisans</span>
+        <span class="ticker-item">MoMA Permanent Collection</span>
+        <!-- duplicate for seamless loop -->
+        <span class="ticker-item">Prada Fashion Week</span>
+        <span class="ticker-item">Vogue Editorial</span>
+        <span class="ticker-item">Met Gala 2024</span>
+        <span class="ticker-item">Palais Galliera</span>
+        <span class="ticker-item">Glitz Africa Fashion Week</span>
+        <span class="ticker-item">Lyon Heritage Weaves</span>
+        <span class="ticker-item">Kyoto Artisans</span>
+        <span class="ticker-item">MoMA Permanent Collection</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+     BIO SECTION
+     Portrait + awards on the left,
+     brand story content on the right
+════════════════════════════════════════ -->
+  <section class="bio-section" id="bio">
+
+    <!-- Left column: portrait image with award badge -->
+    <div class="bio-left sr sr-left">
+      <div class="bio-portrait">
+        <img
+          src="images/dcl-650-CP1yX1o71qg-unsplash.jpg"
+          alt="Big Billy in his Parisian atelier"
+        />
+     <!-- Award overlay: shows number + label -->
+        <div class="bio-award">
+          <span class="bio-award-num">08</span>
+          <span class="bio-award-label">Int'l Awards</span>
+        </div>
+      </div>
+    </div>
+     <!-- Right column: section tag + biography text -->
+    <div class="bio-right sr sr-right">
+      <div class="section-tag">
+        <span class="deco-line short"></span>
+        About Big Billy
+      </div>
+     
+      <!-- Bio heading: poetic statement introducing the designer's philosophy -->
+      <h2 class="bio-heading">
+        Where <em>architecture</em><br/>meets desire
+      </h2>
+      <!-- First bio paragraph: origin story -->
+      <p class="bio-text">
+        Born in Ghana and refined at Parsons School of Design in New York, 
+         Big Billy established his atelier on the belief that fashion should move like a second skin 
+         an intimate dialogue between fabric and the body it embraces.
+      </p>
+
+      <!-- Second bio paragraph: career highlights + collaborations -->
+      <p class="bio-text">
+        His collections have illuminated the runways of Milan Fashion Week for over a decade, 
+        earning retrospectives at the Museo della Moda and permanent placements at the Victoria and Albert Museum.
+        He collaborates closely with the silk ateliers of Como and master dyers in Kyoto,
+        ensuring every piece carries the memory of hands.
+      </p>
+
+      <!-- Divider line separating bio text from stats -->
+      <div class="bio-divider"></div>
+
+      <!-- Bio stats: key numbers highlighting career impact -->
+      <div class="bio-stats">
+        <div class="bio-stat">
+          <div class="bio-stat-num">16<sup>+</sup></div>
+          <div class="bio-stat-label">Years in Couture</div>
+        </div>
+        <div class="bio-stat">
+          <div class="bio-stat-num">42</div>
+          <div class="bio-stat-label">Collections</div>
+        </div>
+        <div class="bio-stat">
+          <div class="bio-stat-num">34</div>
+          <div class="bio-stat-label">Countries</div>
+        </div>
+      </div>
+
+      <a class="bio-link" href="https://vogue.com" target="_blank" rel="noopener" data-cursor="Read">
+        <span class="deco-line short"></span>
+        Featured in Vogue Paris
+      </a>
+    </div>
+
+  </section>
+
+  
+  <!-- ══════════════════════════════════════
+     EXPERTISE SECTION
+     Grid of disciplines with icons, numbers,
+     titles, images, and descriptions
+════════════════════════════════════════ -->
+  <section class="expertise-band" id="expertise">
+    <div class="section-tag sr">
+      <span class="deco-line short"></span>
+      Disciplines
+    </div>
+
+    <div class="expertise-grid">
+
+      <div class="exp-card sr" style="--d:0s">
+  <div class="exp-num">01</div>
+  <div class="exp-icon">✦</div>
+  <div class="exp-title">Haute Couture</div>
+  <img class="exp-img" src="images/pexels-minan1398-758874.jpg">
+  <p class="exp-desc">
+    Hand-crafted, made-to-measure garments built over 500+ artisanal hours.
+    Bespoke fittings available in Paris and New York by appointment.
+  </p>
+</div>
+
+
+      <div class="exp-card sr" style="--d:.12s">
+        <div class="exp-num">02</div>
+        <div class="exp-icon">◈</div>
+        <div class="exp-title">Ready-to-Wear</div>
+        <img class="exp-img" src="images/pexels-solliefoto-298863.jpg">
+        <p class="exp-desc">
+          Seasonal collections that translate runway vision into wearable pieces
+          without compromising their architectural soul.
+        </p>
+      </div>
+
+      <div class="exp-card sr" style="--d:.24s">
+        <div class="exp-num">03</div>
+        <div class="exp-icon">◇</div>
+        <div class="exp-title">Brand Consulting</div>
+        <img class="exp-img" src="images/pexels-conojeghuo-375902.jpg">
+        <p class="exp-desc">
+          Strategic design direction for emerging luxury houses seeking to define
+          or elevate their visual language and heritage positioning.
+        </p>
+      </div>
+
+      <div class="exp-card sr" style="--d:.36s">
+        <div class="exp-num">04</div>
+        <div class="exp-icon">⬡</div>
+        <div class="exp-title">Textile Research</div>
+        <img class="exp-img" src="images/engin-akyurt-SpIg9HoZjPE-unsplash.jpg">
+        <p class="exp-desc">
+          Collaboration with heritage mills to develop proprietary weaves and
+          sustainable fabrications that push material beyond convention.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     COLLECTIONS SECTION
+     Portfolio grid showcasing selected collections
+════════════════════════════════════════ -->
+  <section class="collections-section" id="collections">
+
+    <div class="collections-header sr">
+      <div>
+        <div class="section-tag" style="margin-bottom:1rem">
+          <span class="deco-line short"></span>
+          Portfolio
+        </div>
+        <h2 class="collections-title">
+          Selected<br/><em>Collections</em>
+        </h2>
+      </div>
+      <a class="view-all-link" href="#" data-cursor="View">View all collections</a>
+    </div>
+
+    <div class="coll-grid">
+
+      <div class="coll-card large sr sr-left" data-cursor="View">
+        <img src="images/shedrack-salami-kjuc35QBbtM-unsplash.jpg" alt="Dissolution Collection"/>
+        <div class="coll-overlay">
+          <span class="coll-season">SS 2025 · Paris</span>
+          <span class="coll-name">Dissolution</span>
+        </div>
+      </div>
+
+      <div class="coll-card sr" style="--d:.1s" data-cursor="View">
+        <img src="images/10f25bc8-c0dd-11ed-87ae-0210609a3fe2.jpg" alt="Meridian Collection"/>
+        <div class="coll-overlay">
+          <span class="coll-season">FW 2024 · Milan</span>
+          <span class="coll-name">Meridian</span>
+        </div>
+      </div>
+
+      <div class="coll-card sr" style="--d:.2s" data-cursor="View">
+        <img src="images/models-pose-at-the-mia-vesper-presentation-during-september-news-photo-1662932957.avif" alt="Vesper Collection"/>
+        <div class="coll-overlay">
+          <span class="coll-season">SS 2024 · New York</span>
+          <span class="coll-name">Vesper</span>
+        </div>
+      </div>
+
+      <div class="coll-card sr" style="--d:.3s" data-cursor="View">
+        <img src="images/CSBLFEXVABGFDMFN3NL7KX523A.avif" alt="Umbra Collection"/>
+        <div class="coll-overlay">
+          <span class="coll-season">FW 2023 · Paris</span>
+          <span class="coll-name">Umbra</span>
+        </div>
+      </div>
+
+      <div class="coll-card sr" style="--d:.4s" data-cursor="View">
+        <img src="images/FASHION-MEN-MILAN-PRADA-008.avif" alt="Filament Collection"/>
+        <div class="coll-overlay">
+          <span class="coll-season">SS 2023 · Tokyo</span>
+          <span class="coll-name">Filament</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     QUOTE SECTION
+     Decorative pull-quote with attribution
+════════════════════════════════════════ -->
+  <section class="quote-section">
+    <div class="quote-deco">"</div>
+
+    <div class="quote-body sr sr-scale">
+      <blockquote>
+        Fashion is the art form that lives closest to the body — it knows your posture,
+        your morning mood, the version of yourself brave enough to walk into the room today.
+      </blockquote>
+      <div class="quote-rule">
+        <span class="quote-attribution">Big Billy</span>
+      </div>
+    </div>
+
+    <div class="quote-deco right">"</div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     PRESS SECTION
+     Logos of major publications for credibility
+════════════════════════════════════════ -->
+  <div class="press-bar sr">
+    <span class="press-label">As seen in</span>
+    <div class="press-divider"></div>
+    <div class="press-logos">
+      <a class="press-logo" href="#" rel="noopener">VOGUE</a>
+      <a class="press-logo" href="#" rel="noopener">HARPER'S BAZAAR</a>
+      <a class="press-logo" href="#" rel="noopener">W MAGAZINE</a>
+      <a class="press-logo" href="#" rel="noopener">LE FIGARO</a>
+      <a class="press-logo" href="#" rel="noopener">ELLE</a>
+      <a class="press-logo" href="#" rel="noopener">THE TIMES</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+     CONTACT SECTION
+     Invitation to collaborate + city presence
+    ════════════════════════════════════════ -->
+
+  <section class="contact-section" id="contact">
+
+    <div class="contact-left sr sr-left">
+      <div class="section-tag" style="margin-bottom:2rem">
+        <span class="deco-line short"></span>
+        Get in Touch
+      </div>
+      <h2 class="contact-heading">
+        Let's create<br/><em>something remarkable</em>
+      </h2>
+      <p class="contact-body">
+        Available for bespoke commissions, brand collaborations, editorial
+        direction, and speaking engagements. Atelier visits strictly by
+        appointment.
+      </p>
+      <div class="contact-cities">
+        <span class="city-tag">Accra Ghana</span>
+        <span class="city-tag">New York, SoHo</span>
+        <span class="city-tag">Milan</span>
+      </div>
+    </div>
+
+    <div class="contact-right sr sr-right">
+
+      <a class="contact-row" href="mailto:billyansah@gmail.com">
+        <span class="contact-row-icon">✉</span>
+        <div class="contact-row-inner">
+          <span class="contact-row-type">Email Studio</span>
+          <span class="contact-row-value">BigBilly.com</span>
+        </div>
+      </a>
+
+      <a class="contact-row" href="https://instagram.com" target="_blank" rel="noopener">
+        <span class="contact-row-icon">◈</span>
+        <div class="contact-row-inner">
+          <span class="contact-row-type">Instagram</span>
+          <span class="contact-row-value">@BigBilly.studio</span>
+        </div>
+      </a>
+
+      <a class="contact-row" href="https://linkedin.com" target="_blank" rel="noopener">
+        <span class="contact-row-icon">◇</span>
+        <div class="contact-row-inner">
+          <span class="contact-row-type">LinkedIn</span>
+          <span class="contact-row-value">Big Billy Design</span>
+        </div>
+      </a>
+
+      <a class="contact-row" href="tel:+33142000000">
+        <span class="contact-row-icon">◎</span>
+        <div class="contact-row-inner">
+          <span class="contact-row-type">Paris Atelier</span>
+          <span class="contact-row-value">+1 571 385 - 9171</span>
+        </div>
+      </a>
+
+      <a class="cta-main" href="mailto:billyansah@gmail.com">Request a Consultation</a>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer>
+    <a class="footer-logo" href="#top">BIG<span class="logo-accent">.</span>BILLY</a>
+
+    <ul class="footer-nav">
+      <li><a href="#bio">About</a></li>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#">Press</a></li>
+    </ul>
+
+    <div class="footer-right">
+      <div class="footer-social">
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" rel="noopener">Pinterest</a>
+      </div>
+      <p class="footer-copy">© 2026 Big Billy. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- ══════════════════════════════════════
+       JAVASCRIPT
+  ══════════════════════════════════════ -->
+  <script>
+    /* ── 1. PAGE LOADER ── */
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('loader').classList.add('hidden');
+      }, 2000);
+    });
+
+    /* ── 2. CUSTOM MAGNETIC CURSOR ── */
+    (function () {
+      const dot    = document.getElementById('cursor-dot');
+      const circle = document.getElementById('cursor-circle');
+      const label  = document.getElementById('cursor-label');
+      let mx = 0, my = 0, cx = 0, cy = 0;
+      let raf;
+
+      document.addEventListener('mousemove', e => {
+        mx = e.clientX;
+        my = e.clientY;
+        dot.style.left = mx + 'px';
+        dot.style.top  = my + 'px';
+        if (label.textContent) {
+          label.style.left = (mx + 28) + 'px';
+          label.style.top  = (my - 10) + 'px';
+        }
+      });
+
+      function animateCircle() {
+        cx += (mx - cx) * 0.11;
+        cy += (my - cy) * 0.11;
+        circle.style.left = cx + 'px';
+        circle.style.top  = cy + 'px';
+        raf = requestAnimationFrame(animateCircle);
+      }
+      animateCircle();
+
+      // Hover state
+      document.querySelectorAll('a, button, [data-cursor]').forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          document.body.classList.add('cursor-hover');
+          if (el.dataset.cursor) {
+            label.textContent = el.dataset.cursor;
+            label.style.opacity = '1';
+          }
+        });
+        el.addEventListener('mouseleave', () => {
+          document.body.classList.remove('cursor-hover');
+          label.textContent = '';
+          label.style.opacity = '0';
+        });
+      });
+
+      // Hide on mobile
+      if ('ontouchstart' in window) {
+        [dot, circle, label].forEach(el => el.style.display = 'none');
+      }
+    })();
+
+    /* ── 3. NAVBAR SCROLL ── */
+    (function () {
+      const nav = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+      }, { passive: true });
+    })();
+
+    /* ── 4. SMOOTH SCROLL for anchor links ── */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    /* ── 5. SCROLL REVEAL ── */
+    (function () {
+      const els = document.querySelectorAll('.sr');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const delay = entry.target.style.getPropertyValue('--d') || '0s';
+            entry.target.style.transitionDelay = delay;
+            entry.target.classList.add('in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+      els.forEach(el => observer.observe(el));
+    })();
+
+    /* ── 6. HAMBURGER (mobile nav toggle) ── */
+    (function () {
+      const btn = document.getElementById('hamburger');
+      const nav = document.getElementById('navbar');
+
+      btn.addEventListener('click', () => {
+        const open = nav.classList.toggle('mobile-open');
+        btn.setAttribute('aria-expanded', open);
+
+        // Inject/remove mobile menu
+        let menu = document.getElementById('mobile-menu');
+        if (open) {
+          if (!menu) {
+            menu = document.createElement('div');
+            menu.id = 'mobile-menu';
+            Object.assign(menu.style, {
+              position: 'fixed',
+              top: '0', left: '0', right: '0', bottom: '0',
+              background: 'rgba(10,9,5,0.97)',
+              zIndex: '400',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '2.5rem',
+              animation: 'heroFade 0.4s ease both'
+            });
+
+            const links = ['#bio|About', '#expertise|Expertise', '#collections|Collections', '#contact|Contact'];
+            links.forEach(l => {
+              const [href, text] = l.split('|');
+              const a = document.createElement('a');
+              a.href = href;
+              a.textContent = text;
+              Object.assign(a.style, {
+                fontFamily: "'Playfair Display', serif",
+                fontSize: '2.5rem',
+                fontWeight: '400',
+                color: '#f0e8d8',
+                textDecoration: 'none',
+                letterSpacing: '0.05em'
+              });
+              a.addEventListener('click', () => {
+                document.body.removeChild(menu);
+                nav.classList.remove('mobile-open');
+              });
+              menu.appendChild(a);
+            });
+
+            const close = document.createElement('button');
+            close.textContent = '✕';
+            Object.assign(close.style, {
+              position: 'absolute', top: '2rem', right: '2rem',
+              background: 'none', border: 'none',
+              color: '#d4b478', fontSize: '1.4rem'
+            });
+            close.addEventListener('click', () => {
+              document.body.removeChild(menu);
+              nav.classList.remove('mobile-open');
+            });
+            menu.appendChild(close);
+            document.body.appendChild(menu);
+          }
+        } else {
+          if (menu) document.body.removeChild(menu);
+        }
+      });
+    })();
+
+    /* ── 7. PARALLAX on hero image ── */
+    (function () {
+      const heroImg = document.querySelector('.hero-image-col img');
+      if (!heroImg || window.matchMedia('(max-width:1024px)').matches) return;
+
+      window.addEventListener('scroll', () => {
+        const y = window.scrollY;
+        heroImg.style.transform = `translateY(${y * 0.18}px)`;
+      }, { passive: true });
+    })();
+
+    /* ── 8. STAT COUNTER ANIMATION ── */
+    (function () {
+      function animateCount(el) {
+        const target = parseInt(el.getAttribute('data-target'), 10);
+        const dur = 1600;
+        const start = performance.now();
+        function step(now) {
+          const p = Math.min((now - start) / dur, 1);
+          const ease = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(ease * target);
+          if (p < 1) requestAnimationFrame(step);
+          else el.textContent = target;
+        }
+        requestAnimationFrame(step);
+      }
+
+      const counters = document.querySelectorAll('[data-target]');
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { animateCount(e.target); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.5 });
+      counters.forEach(c => io.observe(c));
+    })();
+  </script>
+
+</body>
+</html>
