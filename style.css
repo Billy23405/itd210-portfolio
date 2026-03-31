@@ -20,6 +20,16 @@
   --rust:        #b05c3a;
   --rust-light:  #d4784e;
   --muted:       rgba(240,232,216,0.35);
+  
+  
+  --clr-gold:      var(--gold);
+  --clr-gold-pale: #e6d5b8;
+  --clr-soft:      var(--ivory-dim);
+  --font-label:    var(--ff-body);
+  --font-display:  var(--ff-display);
+  --ease:          cubic-bezier(0.16, 1, 0.3, 1);
+  --radius:        4px;
+
   --ff-display:  'Playfair Display', serif;
   --ff-dm:       'DM Serif Display', serif;
   --ff-body:     'Tenor Sans', sans-serif;
@@ -1100,4 +1110,39 @@ footer {
   .footer-nav { flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
   .contact-cities { flex-wrap: wrap; }
   .collections-header { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+}
+
+/* ── ACCESSIBILITY: REDUCED MOTION FALLBACK ── */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+
+  /* Hide custom cursor as it can be overwhelming */
+  #cursor-dot, #cursor-circle, #cursor-label {
+    display: none !important;
+  }
+
+  /* Ensure system cursor is visible */
+  html, body {
+    cursor: auto !important;
+  }
+
+  /* Disable Reveal Animations */
+  .sr {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  
+  /* Disable Parallax */
+  .hero-image-col img {
+    transform: none !important;
+  }
 }
